@@ -13,8 +13,7 @@ ink_lang = { version = "3.3", default-features = false }
 
 scale = { package = "parity-scale-codec", version = "3", default-features = false, features = ["derive"] }
 scale-info = { version = "2", default-features = false, features = ["derive"], optional = true }
-# logics = { path = "../../logics", default-features = false }
-other_contract = { path = "../other_contract", default-features = false }
+logics = { path = "../../logics", default-features = false }
 
 [lib]
 name = "flipper"
@@ -33,6 +32,6 @@ std = [
     "ink_primitives/std",
     "scale/std",
     "scale-info/std",
-    "other_contract/std"
+    "logics/std"
 ]
 ink-as-dependency = []
