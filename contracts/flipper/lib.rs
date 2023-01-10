@@ -16,7 +16,11 @@ mod flipper {
         value: bool,
     }
 
-    impl Base for Flipper {}
+    impl Base for Flipper {
+        fn add(&self, a: i32, b: i32) -> i32 {
+            a + b
+        }
+    }
 
     impl Flipper {
         /// Constructor that initializes the `bool` value to the given `init_value`.
